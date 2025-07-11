@@ -1,0 +1,4 @@
+"src/assets/*.png" filter=lfs diff=lfs merge=lfs -text
+"src/assets/card/*.png" filter=lfs diff=lfs merge=lfs -text
+"src/Pages/Home/assets/*.png" filter=lfs diff=lfs merge=lfs -text
+"src/Pages/Home/assets/card/*.png" filter=lfs diff=lfs merge=lfs -text
