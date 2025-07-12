@@ -1,79 +1,51 @@
 import React from 'react'
-import { Navbar } from '../../components/Navbar'
-import { Fotbar } from '../../components/Fotbar'
-import card_whatisebsite from "../Home/assets/card/2.png";
 
 export const News = () => {
   return (
-    <div>
-      <Navbar/>
-      <div>
-      <div className="max-w-[1340px] mx-auto grid md:grid-cols-2">
-        <p></p>
+    <div className="bg-gray-50 min-h-screen py-16 px-4">
+      <div className="max-w-[1340px] mx-auto">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-center mb-12 text-primary">News and Articles</h1>
 
-          <div className="mx-auto grid " >
-
-            <div>
-            <p className="text-white uppercase justify-center mt-[50px] font-bold md:text-5xl sm:text-4xl text-3xl">
-            
-            News And Artical
-          </p>
-            </div>
-
-            
-            
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Placeholder Article Card 1 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col transition duration-300 ease-in-out transform hover:scale-105">
+            <h2 className="text-2xl font-bold mb-3 text-gray-800">Understanding Early Childhood Development</h2>
+            <p className="text-gray-600 mb-4 flex-grow">A comprehensive guide for new parents on milestones and support.</p>
+            <button className="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 mt-auto">
+              Read More
+            </button>
           </div>
-          
+
+          {/* Placeholder Article Card 2 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col transition duration-300 ease-in-out transform hover:scale-105">
+            <h2 className="text-2xl font-bold mb-3 text-gray-800">The Importance of Comprehensive Sex Education</h2>
+            <p className="text-gray-600 mb-4 flex-grow">Exploring why open and honest conversations are crucial for youth.</p>
+            <button className="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 mt-auto">
+              Read More
+            </button>
+          </div>
+
+          {/* Placeholder Article Card 3 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col transition duration-300 ease-in-out transform hover:scale-105">
+            <h2 className="text-2xl font-bold mb-3 text-gray-800">Navigating Pregnancy: A Guide for Expectant Mothers</h2>
+            <p className="text-gray-600 mb-4 flex-grow">Tips and advice for a healthy and happy pregnancy journey.</p>
+            <button className="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 mt-auto">
+              Read More
+            </button>
+          </div>
+
+          {/* Placeholder Article Card 4 */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col transition duration-300 ease-in-out transform hover:scale-105">
+            <h2 className="text-2xl font-bold mb-3 text-gray-800">Mental Health Support for New Parents</h2>
+            <p className="text-gray-600 mb-4 flex-grow">Resources and strategies to cope with the challenges of parenthood.</p>
+            <button className="bg-primary text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300 mt-auto">
+              Read More
+            </button>
+          </div>
+
+          {/* Add more placeholder cards as needed */}
         </div>
-    </div>
-
-    <div className="w-full py-[2rem] px-4 bg-[#af8dff]">
-          <div className="max-w-[1340px] mx-auto grid md:grid-row-4 gap-8 ">
-          
-
-            <div className="w-[1300px] h-[300px] shadow-2xl flex-col p-4  rounded-2xl  bg-[#D9D9D9] bg-opacity-[0.45] duration-300 md:grid-row-4">
-              
-              
-
-
-            
-            </div>
-            <div className="w-[1300px] h-[300px] shadow-2xl flex-col p-2  rounded-2xl  bg-[#D9D9D9] bg-opacity-[0.45] duration-300 md:grid-row-4">
-              
-              
-
-
-            
-            </div>
-
-            <div className="w-[1300px] h-[300px] shadow-2xl flex-col p-2  rounded-2xl  bg-[#D9D9D9] bg-opacity-[0.45] duration-300 md:grid-row-4">
-              
-              
-
-
-            
-            </div>
-            <div className="w-[1300px] h-[300px] shadow-2xl flex-col p-2  rounded-2xl  bg-[#D9D9D9] bg-opacity-[0.45] duration-300 md:grid-row-4">
-              
-              
-
-
-            
-            </div>
-            
-
-
-              </div>
-
-
-
-
-    
-
-
-
       </div>
-    <Fotbar/>
     </div>
   )
 }

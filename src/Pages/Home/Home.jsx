@@ -1,8 +1,7 @@
 import React from "react";
-import { Typed } from "react-typed";
-import { Router } from "react-router-dom";
-
+import { TypeAnimation } from "react-type-animation";
 import { useNavigate } from "react-router-dom";
+import { FaApple, FaGooglePlay } from "react-icons/fa"; // For app store icons
 
 import appview from "../Home/assets/app view.png";
 import card_appintro from "../Home/assets/card/5.png";
@@ -10,147 +9,131 @@ import card_whywedothis from "../Home/assets/card/3.png";
 import card_whatisebsite from "../Home/assets/card/2.png";
 import card_appdescription from "../Home/assets/card/4.png";
 
-import bgIcon from "../Home/assets/bg_icon_home.png";
-
-import { WhatWebSit } from "./WhatWebSit";
-
 export const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div>
-      
-      <div className="w-full py-4 px-1 ">
-        <div className="max-w-[1340px] mx-auto grid md:grid-cols-2">
-          <p className="text-white uppercase justify-center mt-[50px] font-bold md:text-7xl sm:text-4xl text-3xl">
-            Sex education Along with Maternal and Child counseling
-          </p>
+    <div className="bg-gray-50 min-h-screen relative">
+      {/* Logo */}
+      <div className="  ">
+        
+      </div>
 
-          <div className="mx-auto grid grid-row-2">
-            <div>
-              <button className=" text-lg font-sans bg-white w-[220px] rounded-md   my-4 mx-auto px-2 My-1 uppercase font-bold flex justify-self-end ">
-                {" "}
-                Serenox Mobile App{" "}
+      {/* Hero Section */}
+      <div className="w-full py-16 px-4">
+        <div className="max-w-[1340px] mx-auto grid md:grid-cols-2 items-center gap-8">
+          <div className="text-gray-800 text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4 text-primary">
+              <TypeAnimation
+                sequence={[
+                  "Empowering Health Education",
+                  1500,
+                  "Maternal & Child Counseling",
+                  1500,
+                  "Your Guide to Sex Education",
+                  1500,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 font-light">
+              Comprehensive resources and expert guidance for a healthier, informed life.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+              <button
+                disabled
+                className="bg-primary text-white font-bold py-3 px-6 rounded-lg shadow-lg flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105 opacity-50 cursor-not-allowed"
+              >
+                <FaApple className="mr-2" size={24} /> Download on the App Store
+              </button>
+              <button
+                disabled
+                className="bg-primary text-white font-bold py-3 px-6 rounded-lg shadow-lg flex items-center justify-center transition duration-300 ease-in-out transform hover:scale-105 opacity-50 cursor-not-allowed"
+              >
+                <FaGooglePlay className="mr-2" size={24} /> Get it on Google Play
               </button>
             </div>
-
-            <img className="w-[450px] mx-auto my- " src={appview} alt="/" />
           </div>
-        </div>
-
-        <div className="w-full py-[2rem] px-4 bg-[#af8dff]">
-          <div className="max-w-[1340px] mx-auto grid md:grid-cols-4 gap-8 ">
-            {/* what is web site--------------------------------------------------------------------------------------------------*/}
-
-            <div className="w-[300px] shadow-2xl flex-col p-4 my-4 rounded-2xl hover:scale-105 bg-[#D9D9D9] bg-opacity-[0.45] duration-300 ">
-              <img
-                className="w-[350px] mx-auto mt-1 "
-                src={card_whatisebsite}
-                alt=""
-              />
-              <div>
-                <h2 className="text-3xl font-bold text-center py-5">
-                  What is this Website
-                </h2>
-                <div className=" ml-2 ">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. ..
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={() => navigate("/whatwebsite")}
-                className="bg-emerald-500 rounded-md text-white font-medium my-4 mx-auto px-2 py-1 hover:scale-105 "
-              >
-                Lern more
-              </button>
-            </div>
-
-            {/* way we doing this--------------------------------------------------------------------------------------------------*/}
-
-            <div className="w-[300px] shadow-2xl  flex-col p-4 my-4 rounded-2xl hover:scale-105 bg-[#D9D9D9] bg-opacity-[0.45] duration-300 ">
-              <img
-                className="w-[350px] mx-auto mt-1 "
-                src={card_whywedothis}
-                alt=""
-              />
-              <div>
-                <h2 className="text-3xl font-bold text-center py-5">
-                  Why do we doing this ?
-                </h2>
-                <div className=" ml-2 ">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. ..
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={() => navigate("/whatwebsite")}
-                className="bg-emerald-500 rounded-md text-white font-medium my-4 mx-auto px-2 py-1 hover:scale-105"
-              >
-                Lern more
-              </button>
-            </div>
-
-            {/* Abouth apllication--------------------------------------------------------------------------------------------------*/}
-
-            <div className="w-[300px] shadow-2xl flex-col p-4 my-4 rounded-2xl hover:scale-105 bg-[#D9D9D9] bg-opacity-[0.45] duration-300 ">
-              <img
-                className="w-[350px] mx-auto mt-1 "
-                src={card_appintro}
-                alt=""
-              />
-              <div>
-                <h2 className="text-3xl font-bold text-center py-5">
-                  about Our Mobile Apllication
-                </h2>
-                <div className=" ml-2 ">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. ..
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={() => navigate("/whatwebsite")}
-                className="bg-emerald-500 rounded-md text-white font-medium my-4 mx-auto px-2 py-1 hover:scale-105 "
-              >
-                Lern more
-              </button>
-            </div>
-
-            {/*app discription--------------------------------------------------------------------------------------------------*/}
-
-            <div className="w-[300px] shadow-2xl flex-col p-4 my-4 rounded-2xl hover:scale-105 bg-[#D9D9D9] bg-opacity-[0.45] duration-300 ">
-              <img
-                className="w-[350px] mx-auto mt-1 "
-                src={card_appdescription}
-                alt=""
-              />
-              <div>
-                <h2 className="text-3xl font-bold text-center py-5">
-                  About Our Application Content
-                </h2>
-                <div className=" ml-2 ">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. ..
-                  </p>
-                </div>
-              </div>
-
-              <button
-                onClick={() => navigate("/whatwebsite")}
-                className="bg-emerald-500 rounded-md text-white font-medium my-4 mx-auto px-2 py-1 hover:scale-105"
-              >
-                Lern more
-              </button>
-            </div>
+          <div className="flex justify-center md:justify-end">
+            <img className="w-[450px] max-w-full h-auto rounded-lg shadow-xl" src={appview} alt="Mobile App View" />
           </div>
         </div>
       </div>
-      
+
+      {/* Feature Cards Section */}
+      <div className="w-full py-16 px-4 bg-white">
+        <div className="max-w-[1340px] mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Card 1: What is this Website */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition duration-300 ease-in-out transform hover:scale-105">
+            <img className="w-32 h-32 object-contain mb-4" src={card_whatisebsite} alt="Website Description" />
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+              What is this Website?
+            </h2>
+            <p className="text-gray-600 mb-6 flex-grow">
+              Your comprehensive online platform for reliable sex education and maternal & child health guidance.
+            </p>
+            <button
+              onClick={() => navigate("/about")}
+              className="bg-primary text-white font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+
+          {/* Card 2: Why do we doing this? */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition duration-300 ease-in-out transform hover:scale-105">
+            <img className="w-32 h-32 object-contain mb-4" src={card_whywedothis} alt="Our Mission" />
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+              Our Mission
+            </h2>
+            <p className="text-gray-600 mb-6 flex-grow">
+              We are dedicated to providing accessible, accurate, and empathetic information to empower individuals and families.
+            </p>
+            <button
+              onClick={() => navigate("/about")}
+              className="bg-primary text-white font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+
+          {/* Card 3: About Our Mobile Application */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition duration-300 ease-in-out transform hover:scale-105">
+            <img className="w-32 h-32 object-contain mb-4" src={card_appintro} alt="Mobile App Introduction" />
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+              About Our Mobile App
+            </h2>
+            <p className="text-gray-600 mb-6 flex-grow">
+              The Serenox app offers personalized content, interactive tools, and direct support for your health journey.
+            </p>
+            <button
+              onClick={() => navigate("/features")} // Assuming a new features page
+              className="bg-primary text-white font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+
+          {/* Card 4: About Our Application Content */}
+          <div className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center transition duration-300 ease-in-out transform hover:scale-105">
+            <img className="w-32 h-32 object-contain mb-4" src={card_appdescription} alt="App Content" />
+            <h2 className="text-2xl font-bold text-gray-800 mb-3">
+              App Content Overview
+            </h2>
+            <p className="text-gray-600 mb-6 flex-grow">
+              Explore a rich library of articles, videos, and guides on sexual health, pregnancy, and child care.
+            </p>
+            <button
+              onClick={() => navigate("/news")}
+              className="bg-primary text-white font-medium py-2 px-5 rounded-lg hover:bg-blue-700 transition duration-300"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

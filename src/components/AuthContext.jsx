@@ -15,10 +15,7 @@ export const AuthProvider = ({ children }) => {
   const [loadingAuth, setLoadingAuth] = useState(true);
 
   useEffect(() => {
-    // Force sign out on initial load to ensure no one is logged in by default
-    // This will clear any persisted session from previous visits.
-    firebaseSignOut();
-    console.log('AuthContext: Forced logout on initial load.');
+    
 
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       setCurrentUser(user);

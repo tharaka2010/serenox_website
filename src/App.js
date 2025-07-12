@@ -8,12 +8,12 @@ function App() {
   const hideFooter = location.pathname.startsWith('/dashboard');
 
   return (
-    <div>
+    <>
       <Navbar />
       {/* This is where your main application layout and components will go */}
       <Outlet />
       {!hideFooter && <Fotbar />}
-    </div>
+    </>
   );
 }
 

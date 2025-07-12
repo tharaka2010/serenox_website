@@ -12,6 +12,7 @@ const ImageUploader = ({ onUploadSuccess, folderPath = 'images/' }) => {
 
   const handleFileChange = (e) => {
     if (e.target.files[0]) {
+      console.log('File selected:', e.target.files[0]);
       setFile(e.target.files[0]);
       setError(null);
       setUploadSuccess(false); // Reset success message on new file selection
@@ -45,7 +46,8 @@ const ImageUploader = ({ onUploadSuccess, folderPath = 'images/' }) => {
           setUploadProgress(progress);
         },
         (err) => {
-          setError('Upload failed: ' + err.message);
+          console.error('Upload failed:', err);
+          setError('Upload failed. See console for details.');
           setIsUploading(false);
         },
         () => {
@@ -62,7 +64,7 @@ const ImageUploader = ({ onUploadSuccess, folderPath = 'images/' }) => {
       );
     } catch (err) {
       console.error("Image compression error:", err);
-      setError('Image processing failed: ' + err.message);
+      setError('Image processing failed. See console for details.');
       setIsUploading(false);
     }
   };
@@ -79,14 +81,14 @@ const ImageUploader = ({ onUploadSuccess, folderPath = 'images/' }) => {
           file:mr-4 file:py-2 file:px-4
           file:rounded-full file:border-0
           file:text-sm file:font-semibold
-          file:bg-blue-50 file:text-blue-700
+          file:bg-blue-50 file:text-primary
           hover:file:bg-blue-100"
       />
       {file && <p className="text-sm text-gray-600 mt-2">Selected file: {file.name}</p>}
       <button
         onClick={handleUpload}
         disabled={!file || isUploading}
-        className={`mt-3 py-2 px-4 rounded-md text-white font-semibold ${!file || isUploading ? 'bg-gray-400' : 'bg-green-500 hover:bg-green-600'}`}
+        className={`mt-3 py-2 px-4 rounded-md text-white font-semibold ${!file || isUploading ? 'bg-gray-400' : 'bg-primary hover:bg-blue-700'}`}
       >
         {isUploading ? `Uploading (${uploadProgress.toFixed(0)}%)` : 'Upload Image'}
       </button>
@@ -95,7 +97,7 @@ const ImageUploader = ({ onUploadSuccess, folderPath = 'images/' }) => {
       {isUploading && (
         <div className="w-full bg-gray-200 rounded-full h-2.5 mt-2">
           <div
-            className="bg-blue-600 h-2.5 rounded-full"
+            className="bg-primary h-2.5 rounded-full"
             style={{ width: `${uploadProgress}%` }}
           ></div>
         </div>

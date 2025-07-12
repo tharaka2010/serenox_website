@@ -1,0 +1,1181 @@
+ArticleForm.jsx:62 ArticleForm: New article mode.
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+f @ backoff.ts:111
+(anonymous) @ request.ts:135
+Promise.then
+e @ request.ts:122
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+(anonymous) @ backoff.ts:136
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73
+new:1  Access to XMLHttpRequest at 'https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png' from origin 'https://sexeducation-c0902.web.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: It does not have HTTP ok status.
+connection.ts:86   POST https://firebasestorage.googleapis.com/v0/b/sexeducation-c0902.appspot.com/o?name=article_thumbnails%2FCopilot_20250712_040705.png net::ERR_FAILED
+send @ connection.ts:86
+e @ request.ts:115
+(anonymous) @ backoff.ts:74
+setTimeout
+h @ backoff.ts:72
+m @ backoff.ts:129
+(anonymous) @ backoff.ts:139
+setTimeout
+(anonymous) @ backoff.ts:137
+start_ @ request.ts:191
+(anonymous) @ request.ts:80
+cy @ request.ts:77
+(anonymous) @ request.ts:281
+_makeRequest @ service.ts:330
+(anonymous) @ task.ts:376
+(anonymous) @ task.ts:217
+Promise.then
+_resolveToken @ task.ts:214
+_oneShotUpload @ task.ts:368
+_start @ task.ts:203
+(anonymous) @ task.ts:159
+rb @ task.ts:156
+(anonymous) @ reference.ts:290
+mb @ api.ts:169
+onClick @ ImageUploader.jsx:39
+await in onClick
+De @ react-dom.production.min.js:54
+Ve @ react-dom.production.min.js:54
+(anonymous) @ react-dom.production.min.js:55
+Mr @ react-dom.production.min.js:105
+Ur @ react-dom.production.min.js:106
+(anonymous) @ react-dom.production.min.js:117
+uc @ react-dom.production.min.js:273
+Ne @ react-dom.production.min.js:52
+Hr @ react-dom.production.min.js:109
+Wt @ react-dom.production.min.js:74
+qt @ react-dom.production.min.js:73

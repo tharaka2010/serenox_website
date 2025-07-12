@@ -171,7 +171,7 @@ const ArticleList = () => {
       <h1 className="text-3xl font-bold mb-6">Article Management</h1>
 
       <div className="flex justify-between items-center mb-6">
-        <Link to="/dashboard/articles/new" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link to="/dashboard/articles/new" className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Create New Article
         </Link>
       </div>
@@ -180,12 +180,12 @@ const ArticleList = () => {
         <input
           type="text"
           placeholder="Search articles..."
-          className="flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="flex-grow p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <select
-          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
           value={filterCategory}
           onChange={(e) => setFilterCategory(e.target.value)}
         >
@@ -194,7 +194,7 @@ const ArticleList = () => {
           ))}
         </select>
         <select
-          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
           value={filterLanguage}
           onChange={(e) => setFilterLanguage(e.target.value)}
         >
