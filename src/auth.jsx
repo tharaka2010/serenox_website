@@ -21,12 +21,24 @@ export const signOutUser = async () => {
 };
 
 export const isAdmin = async (user) => {
-  if (!user) return false;
+  if (!user) {
+    console.log("isAdmin check: No user provided.");
+    return false;
+  }
+
+  console.log(`isAdmin check: Checking admin status for user: ${user.uid}`);
 
   try {
     const adminDocRef = doc(db, 'adminUsers', user.uid);
     const adminDocSnap = await getDoc(adminDocRef);
-    return adminDocSnap.exists();
+
+    if (adminDocSnap.exists()) {
+      console.log(`isAdmin check: User ${user.uid} is an admin.`);
+      return true;
+    } else {
+      console.log(`isAdmin check: User ${user.uid} is not an admin.`);
+      return false;
+    }
   } catch (error) {
     console.error('Error checking admin status:', error);
     return false;

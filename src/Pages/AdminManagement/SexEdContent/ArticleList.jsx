@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { collection, getDocs, query, where, orderBy, deleteDoc, doc, getDoc as getFirestoreDoc } from 'firebase/firestore';
-import { db, storage } from '../../firebaseConfig';
+import { db, storage } from '../../../firebaseConfig';
 import { ref, deleteObject } from 'firebase/storage';
-import ToastNotification from '../../components/ToastNotification';
+import ToastNotification from '../../../components/ToastNotification';
 
 const ArticleList = () => {
   const [articles, setArticles] = useState([]);
@@ -55,7 +55,7 @@ const ArticleList = () => {
 
         setArticles(articlesData);
 
-        if (articlesData.length === 0 && !loading) { // Check after setting articles
+        if (articlesData.length === 0) { // Check after setting articles
           setToastMessage("No articles found in this category.");
           setShowToast(true);
         }
@@ -69,7 +69,7 @@ const ArticleList = () => {
     };
 
     fetchArticles();
-  }, [filterCategory, filterLanguage, searchTerm]);
+  }, [filterCategory, filterLanguage]);
 
   const handleDelete = async (articleId) => {
     if (window.confirm('Are you sure you want to delete this article?')) {
@@ -153,13 +153,6 @@ const ArticleList = () => {
     return <div className="text-center py-8">Loading articles...</div>;
   }
 
-  // Prioritize "No articles found" if the filtered list is empty
-  if (filteredAndSearchedArticles.length === 0 && !loading) {
-    // This block will be empty, as the message will be shown via alert
-  }
-
-  // Only show a general error if there are articles AND an error occurred (unlikely scenario)
-  // Or if the error is truly critical and prevents any articles from being displayed.
   if (error) {
     return <div className="text-center py-8 text-red-500">Error: {error}</div>;
   }
@@ -171,7 +164,7 @@ const ArticleList = () => {
       <h1 className="text-3xl font-bold mb-6">Article Management</h1>
 
       <div className="flex justify-between items-center mb-6">
-        <Link to="/dashboard/articles/new" className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <Link to="/admin/dashboard/sex-ed/new" className="bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
           Create New Article
         </Link>
       </div>
@@ -222,7 +215,7 @@ const ArticleList = () => {
                   <td className="py-3 px-4 text-sm text-gray-800">{article.contentEn.title}</td>
                   <td className="py-3 px-4 text-sm text-gray-800">{article.category}</td>
                   <td className="py-3 px-4 text-sm">
-                    <Link to={`/dashboard/articles/edit/${article.id}`} className="text-blue-600 hover:text-blue-900 mr-4">
+                    <Link to={`/admin/dashboard/sex-ed/edit/${article.id}`} className="text-blue-600 hover:text-blue-900 mr-4">
                       Edit
                     </Link>
                     <button

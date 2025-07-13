@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../components/AuthContext';
 
@@ -6,20 +6,8 @@ export const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
-  const { login, currentUser, isAdminUser } = useAuth();
+  const { login } = useAuth();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    if (currentUser) {
-      // User is logged in, show alert and navigate
-      alert(`Login successful! Welcome ${currentUser.email}`);
-      if (isAdminUser) {
-        navigate('/dashboard/articles');
-      } else {
-        navigate('/home');
-      }
-    }
-  }, [currentUser, isAdminUser, navigate]);
 
   const getErrorMessage = (errorCode) => {
     switch (errorCode) {
@@ -37,11 +25,10 @@ export const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(null); // Clear previous errors
-    console.log('Login.jsx: handleSubmit triggered');
+    setError(null);
     try {
       await login(email, password);
-      // Navigation and alert are now handled by the useEffect hook
+      navigate('/admin/dashboard'); // Navigate immediately after successful login
     } catch (err) {
       console.error('Login.jsx: Login error:', err);
       setError(getErrorMessage(err.code));

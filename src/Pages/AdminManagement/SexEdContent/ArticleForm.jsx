@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { doc, getDoc, setDoc, collection, addDoc } from 'firebase/firestore';
-import { db } from '../../firebaseConfig';
-import ImageUploader from '../../components/ImageUploader';
-import ArticlePreview from '../../components/ArticlePreview'; // Import the preview component
+import { db } from '../../../firebaseConfig';
+import ImageUploader from '../../../components/ImageUploader';
+import ArticlePreview from '../../../components/ArticlePreview'; // Import the preview component
 
 const ArticleForm = () => {
   const { id } = useParams(); // Get article ID from URL for edit mode
@@ -174,11 +174,11 @@ const ArticleForm = () => {
         articleToSave.createdAt = new Date();
         const docRef = await addDoc(collection(db, 'articles'), articleToSave);
         alert('Article created successfully!');
-        navigate(`/dashboard/articles/edit/${docRef.id}`);
+        navigate(`/admin/dashboard/sex-ed/edit/${docRef.id}`);
       } else {
         await setDoc(doc(db, 'articles', id), articleToSave, { merge: true });
         alert('Article updated successfully!');
-        navigate('/dashboard/articles');
+        navigate('/admin/dashboard/sex-ed');
       }
     } catch (err) {
       console.error("Error saving article:", err);
@@ -426,7 +426,7 @@ const ArticleForm = () => {
               </button>
               <button
                 type="button"
-                onClick={() => navigate('/dashboard/articles')}
+                onClick={() => navigate('/admin/dashboard/sex-ed')}
                 className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
                 Cancel

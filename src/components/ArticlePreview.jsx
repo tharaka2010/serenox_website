@@ -5,8 +5,8 @@ const ArticlePreview = ({ article }) => {
 
   if (!article) {
     return (
-      <div className="w-full md:w-1/3 lg:w-1/4 p-4">
-        <div className="border-4 border-gray-800 rounded-3xl shadow-lg overflow-hidden h-[600px] bg-white">
+      <div className="sticky top-4 h-full">
+        <div className="border-8 border-gray-800 rounded-3xl shadow-2xl overflow-hidden w-[320px] h-[640px] bg-white mx-auto">
           <div className="p-4">
             <p className="text-gray-500">Start typing to see a preview...</p>
           </div>
@@ -15,43 +15,48 @@ const ArticlePreview = ({ article }) => {
     );
   }
 
-  const content = article[`content${previewLang}`] || article.contentEn;
+  // Determine which content to display based on the selected language
+  const content = previewLang === 'En' ? article.contentEn : article.contentSi;
+  const { title, snippet, body } = content || { title: '', snippet: '', body: [] };
+  const { imageUrl } = article;
 
   return (
     <div className="sticky top-4 h-full">
-      <div className="border-8 border-gray-800 rounded-3xl shadow-2xl overflow-hidden w-[320px] h-[640px] bg-white mx-auto">
+      <div className="border-8 border-gray-800 rounded-3xl shadow-2xl overflow-hidden w-[320px] h-[640px] bg-white mx-auto flex flex-col">
         {/* Status bar */}
-        <div className="bg-gray-800 p-2 flex justify-between items-center">
+        <div className="bg-gray-800 p-2 flex justify-between items-center flex-shrink-0">
           <span className="text-white text-xs">9:41 AM</span>
           <span className="text-white text-xs">4G</span>
         </div>
 
-        {/* Language Toggle */}
-        <div className="p-2 bg-gray-100 border-b border-gray-200 text-center">
+        {/* Language Switcher */}
+        <div className="p-2 bg-gray-200 flex justify-center gap-2 flex-shrink-0">
           <button
+            type="button"
             onClick={() => setPreviewLang('En')}
-            className={`px-3 py-1 text-sm rounded-md mr-2 ${previewLang === 'En' ? 'bg-primary text-white' : 'bg-gray-300'}`}
+            className={`px-4 py-1 text-sm rounded-md ${previewLang === 'En' ? 'bg-primary text-white' : 'bg-white'}`}
           >
             English
           </button>
           <button
+            type="button"
             onClick={() => setPreviewLang('Si')}
-            className={`px-3 py-1 text-sm rounded-md ${previewLang === 'Si' ? 'bg-primary text-white' : 'bg-gray-300'}`}
+            className={`px-4 py-1 text-sm rounded-md ${previewLang === 'Si' ? 'bg-primary text-white' : 'bg-white'}`}
           >
             Sinhala
           </button>
         </div>
 
         {/* Article Content */}
-        <div className="p-4 overflow-y-auto h-[calc(100%-80px)]">
-          {article.imageUrl && (
-            <img src={article.imageUrl} alt="Article Thumbnail" className="w-full h-40 object-cover rounded-lg mb-4" />
+        <div className="p-4 overflow-y-auto flex-grow">
+          {imageUrl && (
+            <img src={imageUrl} alt="Article Thumbnail" className="w-full h-40 object-cover rounded-lg mb-4" />
           )}
-          <h1 className="text-2xl font-bold mb-2">{content.title || 'Article Title'}</h1>
-          <p className="text-gray-600 italic mb-4">{content.snippet || 'Article snippet...'}</p>
+          <h1 className="text-2xl font-bold mb-2 break-words">{title || 'Article Title'}</h1>
+          <p className="text-gray-600 italic mb-4 break-words">{snippet || 'Article snippet...'}</p>
           
           <div className="space-y-4">
-            {content.body && content.body.map((item, index) => {
+            {body && body.length > 0 ? body.map((item, index) => {
               if (item.type === 'paragraph') {
                 return <p key={index} className="text-gray-700 text-base leading-relaxed break-words">{item.text || 'Paragraph text...'}</p>;
               }
@@ -70,7 +75,9 @@ const ArticlePreview = ({ article }) => {
                 );
               }
               return null;
-            })}
+            }) : (
+                <p className="text-gray-400">Article body will appear here.</p>
+            )}
           </div>
         </div>
       </div>

@@ -41,13 +41,17 @@ export const Navbar = () => {
           <li className="p-4 font-bold"><Link to="/about" className="hover:text-gray-500">About</Link></li>
           <li className="p-4 font-bold"><Link to="/news" className="hover:text-gray-500">News</Link></li>
           <li className="p-4 font-bold"><Link to="/contact" className="hover:text-gray-500">Contact</Link></li>
-          {currentUser && isAdminUser && (
-            <li className="p-4 font-bold"><Link to="/dashboard/articles" className="hover:text-gray-500">Dashboard</Link></li>
-          )}
         </ul> 
       </div>
       
       <div className="flex items-center justify-end w-1/3 space-x-4">
+        {/* Dashboard Icon */}
+        {currentUser && isAdminUser && (
+          <Link to="/admin/dashboard" className="hidden md:flex items-center p-2 text-gray-700 hover:text-primary transition duration-300" title="Admin Dashboard">
+            <FaTachometerAlt size={25} />
+          </Link>
+        )}
+
         {/* Login/Logout Button */}
         {currentUser ? (
           <button
@@ -63,16 +67,6 @@ export const Navbar = () => {
             Login
           </Link>
         )}
-
-        {/* Language Dropdown */}
-        <select
-          className="hidden md:block p-2 bg-primary text-white rounded-md"
-          onChange={(e) => console.log("Selected language:", e.target.value)}
-        >
-          <option value="en">English</option>
-          <option value="fr">සිංහල</option>
-          <option value="es">Tamil</option>
-        </select>
 
         {/* Mobile Menu Icon */}
         <div onClick={handleNav} className="block md:hidden cursor-pointer">
@@ -97,11 +91,15 @@ export const Navbar = () => {
           <li className="p-4 border-b border-gray-200 font-bold flex items-center"><FaNewspaper className="mr-3" /><Link onClick={handleNav} to="/news">News</Link></li>
           <li className="p-4 border-b border-gray-200 font-bold flex items-center"><FaEnvelope className="mr-3" /><Link onClick={handleNav} to="/contact">Contact</Link></li>
           
+          {currentUser && isAdminUser && (
+            <li className="p-4 border-b border-gray-200 font-bold flex items-center">
+              <FaTachometerAlt className="mr-3" />
+              <Link onClick={handleNav} to="/admin/dashboard">Dashboard</Link>
+            </li>
+          )}
+
           {currentUser ? (
             <>
-              {isAdminUser && (
-                <li className="p-4 border-b border-gray-200 font-bold flex items-center"><FaTachometerAlt className="mr-3" /><Link onClick={handleNav} to="/dashboard/articles">Dashboard</Link></li>
-              )}
               <li className="p-4 font-bold flex items-center">
                 <button onClick={handleMobileLogout} className="w-full text-left flex items-center"><FaSignOutAlt className="mr-3" />Logout</button>
               </li>
@@ -113,18 +111,6 @@ export const Navbar = () => {
             <li className="p-4 font-bold flex items-center"><FaSignInAlt className="mr-3" /><Link onClick={handleNav} to="/login">Login</Link></li>
           )}
         </ul>
- 
-        {/* Mobile Language Dropdown */}
-        <div className="p-4 border-t border-gray-200">
-          <select
-            className="p-2 w-full bg-gray-100 text-gray-800 rounded-md"
-            onChange={(e) => console.log("Selected language:", e.target.value)}
-          >
-            <option value="en">English</option>
-            <option value="fr">සිංහල</option>
-            <option value="es">Tamil</option>
-          </select>
-        </div>
       </div>
     </div>
   );

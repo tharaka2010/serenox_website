@@ -1,0 +1,67 @@
+Compiled with problems:
+×
+ERROR in ./src/Pages/ContentDetail.jsx
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: E:\HICT\Mini Project Web site\miniproject\src\Pages\ContentDetail.jsx: Unexpected token, expected "{" (31:20)
+
+  29 |           setError('Content not found.');
+  30 |         }
+> 31 |       } catch (err) => {
+     |                     ^
+  32 |         console.error("Error fetching content:", err);
+  33 |         setError('Failed to load content.');
+  34 |       } finally {
+    at constructor (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:359:19)
+    at FlowParserMixin.raise (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:3266:19)
+    at FlowParserMixin.unexpected (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:3286:16)
+    at FlowParserMixin.expect (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:3596:12)
+    at FlowParserMixin.parseBlock (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12787:10)
+    at E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12712:72
+    at FlowParserMixin.withSmartMixTopicForbiddingContext (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:11928:14)
+    at FlowParserMixin.parseTryStatement (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12712:26)
+    at FlowParserMixin.parseStatementContent (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12294:21)
+    at FlowParserMixin.parseStatementLike (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12257:17)
+    at FlowParserMixin.parseStatementLike (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5054:24)
+    at FlowParserMixin.parseStatementListItem (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12237:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12810:61)
+    at FlowParserMixin.parseBlockBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12803:10)
+    at FlowParserMixin.parseBlock (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12791:10)
+    at FlowParserMixin.parseFunctionBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:11634:24)
+    at E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5028:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5204:16)
+    at FlowParserMixin.parseFunctionBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5028:12)
+    at FlowParserMixin.parseArrowExpression (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:11609:10)
+    at FlowParserMixin.parseAsyncArrowFromCallExpression (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10796:10)
+    at FlowParserMixin.parseAsyncArrowFromCallExpression (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5623:18)
+    at FlowParserMixin.parseCoverCallAndAsyncArrowHead (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10726:27)
+    at FlowParserMixin.parseSubscript (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10655:19)
+    at FlowParserMixin.parseSubscript (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5786:18)
+    at FlowParserMixin.parseSubscripts (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10628:19)
+    at FlowParserMixin.parseSubscripts (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5752:18)
+    at FlowParserMixin.parseExprSubscripts (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10619:17)
+    at FlowParserMixin.parseUpdate (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10600:21)
+    at FlowParserMixin.parseMaybeUnary (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10580:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10434:61)
+    at FlowParserMixin.parseExprOps (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10439:23)
+    at FlowParserMixin.parseMaybeConditional (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10416:23)
+    at FlowParserMixin.parseMaybeAssign (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10379:21)
+    at FlowParserMixin.parseMaybeAssign (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5685:18)
+    at E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10349:39
+    at FlowParserMixin.allowInAnd (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:11946:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:10349:17)
+    at FlowParserMixin.parseVar (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12878:91)
+    at FlowParserMixin.parseVarStatement (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12724:10)
+    at FlowParserMixin.parseStatementContent (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12340:23)
+    at FlowParserMixin.parseStatementLike (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12257:17)
+    at FlowParserMixin.parseStatementLike (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5054:24)
+    at FlowParserMixin.parseStatementListItem (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12237:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12810:61)
+    at FlowParserMixin.parseBlockBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12803:10)
+    at FlowParserMixin.parseBlock (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:12791:10)
+    at FlowParserMixin.parseFunctionBody (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:11634:24)
+    at E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5028:63
+    at FlowParserMixin.forwardNoArrowParamsConversionAt (E:\HICT\Mini Project Web site\miniproject\node_modules\@babel\parser\lib\index.js:5204:16)
+ERROR
+[eslint] 
+src\Pages\ContentDetail.jsx
+  Line 31:20:  Parsing error: Unexpected token, expected "{" (31:20)

@@ -6,7 +6,7 @@ const ProtectedRoute = () => {
   const { currentUser, isAdminUser, loadingAuth } = useAuth();
 
   if (loadingAuth) {
-    return <div>Loading...</div>; // Or a more sophisticated loading spinner
+    return null; // Render nothing while loading
   }
 
   if (currentUser && isAdminUser) {

@@ -5,7 +5,7 @@ import { Fotbar } from "./components/Fotbar";
 
 function App() {
   const location = useLocation();
-  const hideFooter = location.pathname.startsWith('/dashboard');
+  const hideFooter = location.pathname.startsWith('/dashboard') || location.pathname.startsWith('/admin/dashboard');
 
   return (
     <>
