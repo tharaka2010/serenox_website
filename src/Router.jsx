@@ -16,6 +16,11 @@ import ContentDetail from './Pages/ContentDetail';
 import FeedbackList from './Pages/AdminManagement/UserFeedback/FeedbackList';
 import FeedbackDetail from './Pages/AdminManagement/UserFeedback/FeedbackDetail';
 import ReplyFormatSettings from './Pages/AdminManagement/UserFeedback/ReplyFormatSettings';
+import { WhatIsThisWebsite } from './Pages/WhatIsThisWebsite/WhatIsThisWebsite';
+import { OurMission } from './Pages/OurMission/OurMission';
+import { MobileApp } from './Pages/MobileApp/MobileApp';
+import { AppContent } from './Pages/AppContent/AppContent';
+import { OurTeam } from './Pages/OurTeam/OurTeam';
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +33,11 @@ export const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'news', element: <News /> },
       { path: 'login', element: <Login /> },
+      { path: 'what-is-this-website', element: <WhatIsThisWebsite /> },
+      { path: 'our-mission', element: <OurMission /> },
+      { path: 'mobile-app', element: <MobileApp /> },
+      { path: 'app-content', element: <AppContent /> },
+      { path: 'our-team', element: <OurTeam /> },
       { path: 'content/:type/:id', element: <ContentDetail /> },
       {
         element: <ProtectedRoute />, // Correct: This is the parent protected route
