@@ -1,72 +1,80 @@
-import React, { useState, useEffect } from 'react';
-import { collection, getDocs, query, orderBy } from 'firebase/firestore';
-import { db } from '../../firebaseConfig';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { FaRss } from 'react-icons/fa';
+
+// Placeholder data for articles
+const articles = [
+  {
+    title: "Understanding Early Childhood Development",
+    description: "A comprehensive guide for new parents on milestones and support.",
+    category: "Child Health",
+    date: "July 12, 2025",
+  },
+  {
+    title: "The Importance of Comprehensive Sex Education",
+    description: "Exploring why open and honest conversations are crucial for youth.",
+    category: "Sex Education",
+    date: "July 10, 2025",
+  },
+  {
+    title: "Navigating Pregnancy: A Guide for Expectant Mothers",
+    description: "Tips and advice for a healthy and happy pregnancy journey.",
+    category: "Maternal Health",
+    date: "July 8, 2025",
+  },
+  {
+    title: "Mental Health Support for New Parents",
+    description: "Resources and strategies to cope with the challenges of parenthood.",
+    category: "Counseling",
+    date: "July 5, 2025",
+  },
+  {
+    title: "Building Strong Family Bonds",
+    description: "Techniques for effective communication and connection within the family.",
+    category: "Counseling",
+    date: "July 2, 2025",
+  },
+  {
+    title: "A Guide to Contraception Methods",
+    description: "An overview of different contraception options to help you make an informed choice.",
+    category: "Sex Education",
+    date: "June 28, 2025",
+  },
+];
 
 export const News = () => {
-  const [items, setItems] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const fetchItems = async () => {
-      setLoading(true);
-      try {
-        const q = query(collection(db, 'newsAndArticles'), orderBy('createdAt', 'desc'));
-        const querySnapshot = await getDocs(q);
-        const itemsData = querySnapshot.docs.map(doc => ({
-          id: doc.id,
-          ...doc.data()
-        }));
-        setItems(itemsData);
-      } catch (err) {
-        console.error("Error fetching content:", err);
-        setError('Could not load content.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchItems();
-  }, []);
-
-  if (loading) {
-    return <div className="text-center py-8">Loading...</div>;
-  }
-
-  if (error) {
-    return <div className="text-center py-8 text-red-500">Error: {error}</div>;
-  }
-
   return (
-    <div className="bg-gray-50 min-h-screen py-16 px-4">
-      <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-center mb-12 text-primary">News & Articles</h1>
+    <div className="bg-gray-50 min-h-screen">
+      {/* Hero Section */}
+      <div className="bg-primary text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <FaRss className="text-5xl mx-auto mb-4" />
+          <h1 className="text-5xl font-extrabold">News and Articles</h1>
+          <p className="mt-4 text-xl">
+            Stay informed with the latest articles and insights from our experts.
+          </p>
+        </div>
+      </div>
 
-        {items.length === 0 && !loading && (
-          <p className="text-center text-gray-500">No news or articles have been posted yet.</p>
-        )}
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {items.map(item => (
-            <Link to={`/content/news/${item.id}`} key={item.id} className="group bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 ease-in-out transform hover:-translate-y-2">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={item.thumbnailUrl || 'https://via.placeholder.com/400x200?text=News'} 
-                  alt={item.title}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6 flex flex-col flex-grow">
-                <p className="text-sm text-primary font-semibold mb-2">{item.type}</p>
-                <h2 className="text-2xl font-bold mb-3 text-gray-800 group-hover:text-primary transition-colors duration-300">{item.title}</h2>
-                <p className="text-gray-600 mb-4 flex-grow">{item.snippet}</p>
-                <div className="mt-auto text-primary font-semibold">
-                  Read More &rarr;
+      {/* Articles Grid */}
+      <div className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {articles.map((article, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col transition duration-300 ease-in-out transform hover:-translate-y-2">
+                <div className="p-6 flex-grow">
+                  <p className="text-sm font-semibold text-accent mb-2">{article.category}</p>
+                  <h2 className="text-2xl font-bold mb-3 text-gray-800">{article.title}</h2>
+                  <p className="text-gray-600 mb-4 flex-grow">{article.description}</p>
+                </div>
+                <div className="p-6 bg-gray-50 flex justify-between items-center">
+                  <p className="text-sm text-gray-500">{article.date}</p>
+                  <button className="font-bold text-primary hover:text-blue-700 transition duration-300">
+                    Read More &rarr;
+                  </button>
                 </div>
               </div>
-            </Link>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
